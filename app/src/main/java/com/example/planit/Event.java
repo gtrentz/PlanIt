@@ -20,15 +20,15 @@ public class Event {
     }
 
     public void setDate(String field, int n) {
-        if (field.equals("day")) {
+        if ("day".equals(field)) {
             c.add(Calendar.DATE, n - c.get(Calendar.DAY_OF_MONTH));
-        } else if (field.equals("month")) {
+        } else if ("month".equals(field)) {
             c.add(Calendar.MONTH, n - c.get(Calendar.MONTH));
-        } else if (field.equals("year")){
+        } else if ("year".equals(field)){
             c.add(Calendar.YEAR, n - c.get(Calendar.YEAR));
-        } else if (field.equals("hour")) {
+        } else if ("hour".equals(field)) {
             c.add(Calendar.HOUR, n - c.get(Calendar.HOUR));
-        } else if (field.equals("minute")) {
+        } else if ("minute".equals(field)) {
             c.add(Calendar.MINUTE, n - c.get(Calendar.MINUTE));
         }
     }
